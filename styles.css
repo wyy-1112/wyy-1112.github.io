@@ -613,18 +613,48 @@ h3 {
   }
 
   .interest-grid {
-    display: flex;
-    gap: 12px;
-    margin: 0 -14px;
-    padding: 0 14px 8px;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
   }
 
   .interest-grid article {
-    flex: 0 0 min(82vw, 320px);
-    scroll-snap-align: start;
+    min-width: 0;
+    padding: 12px 10px;
+    scroll-snap-align: none;
+  }
+
+  .interest-grid h3 {
+    font-size: 0.78rem;
+    line-height: 1.25;
+  }
+
+  .interest-grid p {
+    font-size: 0.72rem;
+    line-height: 1.45;
+  }
+
+  .research-paper-group {
+    margin-top: 8px;
+  }
+
+  .research-paper-group > span {
+    font-size: 0.66rem;
+    line-height: 1.25;
+  }
+
+  .research-links {
+    gap: 5px;
+    margin-top: 5px;
+  }
+
+  .research-links a {
+    min-height: 24px;
+    padding: 0 7px;
+    font-size: 0.64rem;
   }
 
   .content,
