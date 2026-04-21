@@ -257,6 +257,32 @@ h3 {
   color: var(--muted);
 }
 
+.research-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 13px;
+}
+
+.research-links a {
+  min-height: 28px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 10px;
+  border: 1px solid rgba(31, 102, 168, 0.18);
+  border-radius: 999px;
+  background: #f6fbff;
+  color: var(--accent-strong);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.research-links a:hover {
+  border-color: rgba(31, 102, 168, 0.38);
+  background: #edf6ff;
+  text-decoration: none;
+}
+
 .personal-note {
   margin-top: 18px;
   padding-left: 16px;
