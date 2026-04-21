@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Jiaxuan Wang, M.Sc. student at Nanjing University and member of LAMDA Group."
+    />
+    <title>Jiaxuan Wang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#awards">Awards</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main" class="page-shell">
+      <aside class="profile-panel" aria-label="Profile summary">
+        <img class="avatar" src="assets/profile.png" alt="Jiaxuan Wang" />
+        <h1>Jiaxuan Wang</h1>
+        <p class="role">M.Sc. Student</p>
+        <p class="affiliation">
+          School of Artificial Intelligence<br />
+          Nanjing University
+        </p>
+      </aside>
+
+      <section class="content">
+        <section id="about" class="section intro-section">
+          <h2 class="section-title">
+            <span class="section-emoji" aria-hidden="true">👋</span>
+            About Me
+          </h2>
+          <p>
+            I am currently a first-year M.Sc. student at the
+            <a href="https://ai.nju.edu.cn/">School of Artificial Intelligence</a>,
+            <a href="https://www.nju.edu.cn/">Nanjing University</a>, and a member of
+            <a href="https://www.lamda.nju.edu.cn/">LAMDA Group</a>, led by Prof.
+            <a href="https://www.lamda.nju.edu.cn/zhouzh/">Zhi-Hua Zhou</a>.
+          </p>
+          <p>
+            I received my B.Sc. degree from the
+            <a href="https://cs.njust.edu.cn/">School of Computer Science and Engineering</a>,
+            <a href="https://www.njust.edu.cn/">Nanjing University of Science and Technology</a>
+            in 2025 (GPA ranked 1 / 71). In the same year, I was admitted to study for
+            a M.Sc. degree in Nanjing University, under the supervision of Prof.
+            <a href="https://www.lamda.nju.edu.cn/guolz/">Lan-Zhe Guo</a> without
+            entrance examination.
+          </p>
+        </section>
+
+        <section id="research" class="section">
+          <h2 class="section-title">
+            <span class="section-emoji" aria-hidden="true">🚀</span>
+            Research Interests
+          </h2>
+          <div class="interest-grid">
+            <article>
+              <h3>OPD and Self-OPD</h3>
+              <p>
+                OPD learns on the student&apos;s own trajectory distribution using
+                teacher-derived token-level supervision, while self-OPD replaces the
+                external teacher with self-generated supervision such as
+                self-distillation, self-reward, or rubric-derived token feedback.
+              </p>
+            </article>
+            <article>
+              <h3>Reinforcement Learning</h3>
+              <p>
+                Improving agentic RL, especially tool use, planning, and reasoning
+                abilities in general-purpose reinforcement learning models.
+              </p>
+            </article>
+            <article>
+              <h3>Reward Modeling</h3>
+              <p>
+                Exploring efficient <strong>rubrics</strong> from real-world data and
+                designing <strong>dense reward</strong> mechanisms for fine-grained
+                supervision.
+              </p>
+            </article>
+          </div>
+          <p class="personal-note">
+            Outside research, I enjoy expressing emotions through piano. I received
+            an Excellent rating in the Level-10 piano examination.
+          </p>
+        </section>
+
+        <section id="publications" class="section">
+          <h2 class="section-title">
+            <span class="section-emoji" aria-hidden="true">📚</span>
+            Publications
+          </h2>
+
+          <ol class="publication-list">
+            <li class="publication publication-featured">
+              <figure class="publication-figure">
+                <img
+                  src="assets/plan-rewardbench.png"
+                  alt="Plan-RewardBench overview figure"
+                />
+              </figure>
+              <div class="publication-body">
+                <div class="venue-badge highlight">ACL'26 main, CCF-A</div>
+                <h3>
+                  Aligning Agents via Planning: A Benchmark for Trajectory-Level Reward
+                  Modeling
+                </h3>
+                <p class="authors">
+                  <strong>Jiaxuan Wang</strong>, Yulan Hu, Wenjin Yang, Zheng Pan, Xin
+                  Li, Lan-Zhe Guo
+                </p>
+                <div class="paper-links">
+                  <a href="https://arxiv.org/abs/2604.08178">
+                    <span class="link-icon paper-icon" aria-hidden="true">↗</span>
+                    Paper
+                  </a>
+                  <a href="https://github.com/wyy-1112/Plan-RewardBench">
+                    <span class="link-icon code-icon" aria-hidden="true">⌘</span>
+                    Code
+                  </a>
+                  <a href="https://huggingface.co/datasets/wyy1112/Plan-RewardBench">
+                    <span class="link-icon data-icon" aria-hidden="true">◇</span>
+                    Dataset
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="publication">
+              <div class="publication-body">
+                <div class="venue-badge report">Technical Report</div>
+                <h3>AMAP Agentic Planning Technical Report</h3>
+                <p class="authors">AMAP Team</p>
+                <p>
+                  Participated in reward model design and follow-up agentic RL
+                  optimization.
+                </p>
+                <div class="paper-links">
+                  <a href="https://arxiv.org/pdf/2512.24957">
+                    <span class="link-icon paper-icon" aria-hidden="true">↗</span>
+                    Paper
+                  </a>
+                </div>
+              </div>
+            </li>
+
+            <li class="publication">
+              <div class="publication-body">
+                <div class="venue-badge progress">In Preparation</div>
+                <h3>Self-OPD</h3>
+                <p class="authors"><strong>Jiaxuan Wang</strong></p>
+                <p>Ongoing work on Self-OPD.</p>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <section id="experience" class="section">
+          <h2 class="section-title">
+            <span class="section-emoji" aria-hidden="true">💼</span>
+            Internship Experience
+          </h2>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="time">2025.10 - Present</div>
+              <div class="company-logo-frame">
+                <img class="company-logo alibaba-logo" src="assets/alibaba.png" alt="Alibaba logo" />
+              </div>
+              <div>
+                <h3>Research Intern, Amap, Alibaba Group</h3>
+                <p>LLM Foundation Model Team, Amap.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="awards" class="section">
+          <h2 class="section-title">
+            <span class="section-emoji" aria-hidden="true">🏆</span>
+            Awards
+          </h2>
+          <ul class="award-list">
+            <li><span>2025</span> Outstanding Graduate</li>
+            <li><span>2024.11</span> National Scholarship</li>
+            <li>
+              <span>2024.02</span> Special Scholarship for Outstanding Students (top 1%)
+            </li>
+          </ul>
+        </section>
+
+        <section id="contact" class="section contact-section">
+          <h2 class="section-title">
+            <span class="section-emoji" aria-hidden="true">✉️</span>
+            Contact
+          </h2>
+          <ul class="contact-list">
+            <li>
+              <span>Email:</span>
+              <a href="mailto:jiaxuanwang@smail.nju.edu.cn">jiaxuanwang@smail.nju.edu.cn</a>
+            </li>
+            <li>
+              <span>Address:</span>
+              National Key Laboratory for Novel Software Technology<br />
+              Nanjing University Suzhou Campus, Suzhou 215163, China
+            </li>
+          </ul>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
