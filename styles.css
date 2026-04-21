@@ -566,6 +566,10 @@ h3 {
 }
 
 @media (max-width: 620px) {
+  body {
+    width: 100%;
+  }
+
   .nav {
     min-height: 54px;
     justify-content: flex-start;
@@ -578,13 +582,15 @@ h3 {
   }
 
   .page-shell {
-    width: calc(100vw - 24px);
-    max-width: 360px;
-    margin: 24px 12px 72px;
+    width: calc(100vw - 28px);
+    max-width: 390px;
+    margin: 24px auto 72px;
+    padding: 0;
     gap: 22px;
   }
 
   .profile-panel {
+    width: 100%;
     grid-template-columns: 1fr;
     padding: 22px;
   }
@@ -604,6 +610,39 @@ h3 {
 
   .section {
     padding: 28px 0;
+  }
+
+  .interest-grid {
+    display: flex;
+    gap: 12px;
+    margin: 0 -14px;
+    padding: 0 14px 8px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .interest-grid article {
+    flex: 0 0 min(82vw, 320px);
+    scroll-snap-align: start;
+  }
+
+  .content,
+  .section,
+  .publication-list,
+  .publication,
+  .timeline,
+  .timeline-item {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .intro-section p,
+  .interest-grid p,
+  .publication p,
+  .timeline-item p,
+  .personal-note {
+    overflow-wrap: anywhere;
   }
 
   .section-title {
