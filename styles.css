@@ -257,11 +257,22 @@ h3 {
   color: var(--muted);
 }
 
+.research-paper-group {
+  margin-top: 10px;
+}
+
+.research-paper-group > span {
+  display: block;
+  color: var(--ink);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
 .research-links {
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
-  margin-top: 13px;
+  margin-top: 7px;
 }
 
 .research-links a {
