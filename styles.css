@@ -223,8 +223,8 @@ a:hover {
 
 .interest-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 14px;
+  grid-template-columns: 1fr;
+  gap: 12px;
 }
 
 .interest-grid article,
@@ -237,8 +237,8 @@ a:hover {
 }
 
 .interest-grid article {
-  padding: 18px;
-  min-height: 205px;
+  padding: 18px 20px;
+  min-height: auto;
 }
 
 h3 {
@@ -550,14 +550,6 @@ h3 {
   .role,
   .affiliation {
     text-align: left;
-  }
-
-  .interest-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .interest-grid article {
-    min-height: auto;
   }
 
   .publication-featured {
