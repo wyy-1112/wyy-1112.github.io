@@ -442,6 +442,10 @@ h3 {
   padding: 20px;
 }
 
+.timeline-item.text-only {
+  grid-template-columns: 150px minmax(0, 1fr);
+}
+
 .time {
   color: var(--gold);
   font-weight: 800;
