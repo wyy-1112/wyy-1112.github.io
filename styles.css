@@ -442,8 +442,9 @@ h3 {
   padding: 20px;
 }
 
-.timeline-item.text-only {
+.timeline-item.no-logo {
   grid-template-columns: 150px minmax(0, 1fr);
+  align-items: start;
 }
 
 .time {
